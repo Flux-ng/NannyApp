@@ -4,6 +4,7 @@
 }
 body{
     background-color: white;
+    
 }
 
 /*.page-container{
@@ -75,14 +76,25 @@ main{
 
 .photo-gallery-box{
     display: flex;
+    justify-content: center;
+    /*justify-items: center;*/
     width: 100%;
     text-align: center;
     padding-top: 30px;
+    
+}
+
+@media screen and (max-width: 800px){
+    .photo-gallery-box{
+        flex-wrap: wrap;
+        width: 100%;
+    }
 }
 #box{
     display: flex;
     flex-direction: column;
     flex-grow: 2000;
+    
 }
 a{
     text-decoration: none;
@@ -93,6 +105,7 @@ a{
 
 .learn-more{
     color: rgb(43, 195, 255);
+    
 }
 
 #link{
@@ -110,7 +123,9 @@ a{
 }
 
 #message{
-    margin-top: 5rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
     margin-bottom: 3rem;
     font-size: 1.5em;
 }
@@ -121,45 +136,69 @@ a{
     align-items: center;
     background-color: rgb(255, 35, 101);
     height: 300px;
-    width: 95%;
+    width: 98%;
     margin-top: 20px;
     padding-top: 20px;
-    margin-bottom: 90px;
+    margin-bottom: 11%;
 }
 
 #flex-container{
     display: flex;
-    justify-content: space-around;
-    padding-top: 50px;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 5%;
+    width: 100%;
 
 }
 
 .box-left{
     height: 230px;
-    width: 350px;
+    width: 30%;
     background-color: white;
-    margin-right: 30px;
+    margin-right: 2em;
+    /*margin-left: 1em;*/
     border: none;
-    box-shadow: 0 0 10px black;
-    font-size: 22px;
+    box-shadow: 0 0 5px;
+    font-size: 1.5vw;
 }
 
 #box-right{
     height: 230px;
-    width: 350px;
+    width: 30%;
+    /*margin-right: 1em;*/
     background-color: white;
     border: none;
-    box-shadow: 0 0 10px black;
-    font-size: 22px;
+    box-shadow: 0 0 5px;
+    font-size: 1.5vw;
+}
+@media screen and (max-width: 800px){
+    .box-left, #box-right{
+        width: 90%;
+        height: auto;
+        font-size: 4vw;
+        margin-top: 2%;
+        margin-right: 0%;
+    }
+     
+    #container{
+        height: auto;
+        margin-bottom: 2%;
+    }
+
+    #flex-container{
+        flex-wrap: wrap;
+    }
+    
+
 }
 
 #h3{
-text-align: center;
-margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .box-items{
-    margin: 30px 20px 0px 20px;
+    margin: 20px 20px 0px 15px;
     
 }
 
@@ -167,16 +206,29 @@ hr{
     margin: 0px 20px 0px 20px;
 }
 
-.steps{
-    margin-top: 50px;
+#few{
+    width: 100%;
+    /*align-items: center;*/
+    text-align: center;
+    margin-bottom: 5rem;
+
 }
 
-#steps{
+/*.steps{
+align-items: center;
+    
+    /*margin-top: 50px;
+}*/
+
+/*#steps{
+    justify-content: center;
     width: 1px;
     height: 100px;
-}
+}*/
 
 .seach{
+    width: 80%;
+    text-align: center;
     margin-top: 50px;
     margin-bottom: 2em;
     font-size: 1.3em;
@@ -196,26 +248,51 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    /*margin: auto;*/
     background-color: rgb(255, 248, 248);
     width: 100%;
     height: 350px;
     border: none;
-    margin-top: 50px;
+    margin-top: 6%;
 }
 
 .flex-box1{
     display: flex;
-    margin-top: 40px;
-    padding-right: 50px;
-    justify-items: space-between;
+    justify-content: center;
+    /*justify-items: center;*/
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    
+
+}
+@media screen and (max-width: 800px){
+    .flex-box1{
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        /*margin-right: 8%;
+        margin-left: 8%;*/
+        margin-top: 1em;
+        margin-right:0em;
+        /*padding-bottom: 10%;*/
+        
+    }
+
+    #box-container{
+        height: auto;
+       /* width: 100%;*/
+        
+    }
+
+
 
 }
 
 #box1{
     height: 200px;
     width: 350px;
-    text-align: center;
+    text-align: left;
     margin-top: 40px;
     /*padding-right: 20px;
     color: green;
@@ -225,6 +302,16 @@ h2{
     box-shadow: 0 0 2px;*/
 }
 
+@media screen and (max-width: 800px){
+    #box1{
+        margin-bottom: 0em;
+        margin-top: 2em;
+    }
+    #box1-items{
+        margin-top: 0em;
+    }
+}
+
 h4{
     margin-top: 30px;
     /*margin-bottom: 20px;*/
@@ -232,40 +319,72 @@ h4{
 }
 
 .back{
+    text-align: center;
+    width: 100%;
     font-size: 1.7em;
 }
+
+@media screen and (max-width: 800px){
+
+}
  #details{
-     padding-bottom: 15px;
+     padding-bottom: 3%;
      font-size: 2em;
      color: white;
  }
 
  .details{
      color: white;
+     width: 60%;
+     text-align: center;
  }
 
 #box1-items{
-    font-size: 1.3em;
+    font-size: 1em;
     margin-left: 40px;
-    padding-top: 15px;
-    text-align: center;
+    padding-top: 10px;
+    text-align: left;
 }
 
 
 .container{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;
+    /*justify-items: center;*/
     height: 200px;
     width: 100%;
     background-color: rgb(43, 195, 255);
 }
 
 .flex-box2{
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
    
 }
+@media screen and (max-width: 800px){
+    .flex-box2{
+        width: 90%;
+        flex-wrap: wrap;
+        
+    }
+
+    .container{
+        height: auto;
+    }
+    #link1, #link2{
+        display: flex;
+        margin-bottom: 2em;
+        justify-content: center;
+        /*align-items: center;*/
+        
+    }
+}
 
 #find{
+    text-align: center;
     font-size: 1.7em;
     color: white;
 }
@@ -276,7 +395,20 @@ h4{
     height: 60px;
     width: 200px;
     background-color:rgb(255, 248, 248);
-    margin-right: 20px;
+    margin-left: 3em;
+    /*padding-top: 1em;*/
+    color:rgb(43, 195, 255);
+    box-shadow: 0 0 10px black; 
+}
+
+#link2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+    width: 200px;
+    background-color:rgb(255, 248, 248);
+    margin-left: 3em;
     /*padding-top: 1em;*/
     color:rgb(43, 195, 255);
     box-shadow: 0 0 10px black; 
@@ -308,6 +440,7 @@ h4{
     width: 100%;
     height: 350px;
     justify-content: center;
+    margin-bottom: 20em;
 }
 
 .flex-box2{
@@ -320,7 +453,8 @@ h4{
 
 #box-1{
     height: 200px;
-    width: 350px; 
+    width: 100%;
+    
 }
 
 .quick-link{

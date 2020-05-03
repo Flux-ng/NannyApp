@@ -45,9 +45,11 @@ body{
     /*padding-left: 2rem;*/
 }
 
-#span{
-    display: flex;
-    /*margin-right: -650px;*/
+@media screen and (max-width: 800px){
+    #span{
+        display: flex;
+        margin-right: -650px;
+    }
 }
 
 .logo{
@@ -372,7 +374,7 @@ h4{
     }
 
     .container{
-        width: 100%
+        width: 100%;
         height: auto;
     }
     #link1, #link2{

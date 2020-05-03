@@ -3,7 +3,9 @@
     padding: 0px;
 }
 
-body{
+html, body{
+    max-width: 100%;
+    overflow-x:hidden;
     background-color: white;
     
 }
@@ -185,7 +187,7 @@ a{
      
     #container{
         height: auto;
-        width: 100%
+        width: 100%;
         margin-bottom: 2%;
     }
 
@@ -195,7 +197,7 @@ a{
     }
     
 
-}
+
 
 #h3{
     text-align: center;
@@ -368,7 +370,7 @@ h4{
 }
 @media screen and (max-width: 800px){
     .flex-box2{
-        width: 90%;
+        width: 100%;
         flex-wrap: wrap;
         
     }
@@ -480,3 +482,5 @@ h4{
     background-color: black;
 }
 
+
+}

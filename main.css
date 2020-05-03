@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
+
 body{
     background-color: white;
     
@@ -14,13 +15,17 @@ body{
 }
 
 .nav-bar{
-    height: 60px;
+    height:75px;
     width: 100%;
     position: fixed;
-    /*border-bottom: 1px solid lightgrey;*/
     background-color: white;
     box-shadow: 0 0 8px;
     
+}
+@media screen and (max-width: 800px){
+    .nav-bar{
+        width: 100%;
+    }
 }
 
 #nav-bar-items{
@@ -95,7 +100,6 @@ main{
 }
 a{
     text-decoration: none;
-    /*padding-bottom: 10px;*/
     text-align: center;
     color: black;
 }

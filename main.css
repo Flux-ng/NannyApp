@@ -18,11 +18,6 @@
     box-shadow: 0 0 8px;
     
 }
-@media screen and (max-width: 800px){
-    .nav-bar{
-        width: 100%;
-    }
-}
 
 #nav-bar-items{
     display: flex;
@@ -32,20 +27,11 @@
     margin-right: 2rem;
     margin-left: 1rem;
     margin: auto;
-    
-        
-
 }
+
 #a-nav{
     padding-right: 2rem;
     /*padding-left: 2rem;*/
-}
-
-@media screen and (max-width: 800px){
-    #span{
-        display: flex;
-        margin-right: -650px;
-    }
 }
 
 .logo{
@@ -84,12 +70,6 @@ main{
     
 }
 
-@media screen and (max-width: 800px){
-    .photo-gallery-box{
-        flex-wrap: wrap;
-        width: 100%;
-    }
-}
 #box{
     display: flex;
     flex-direction: column;
@@ -170,28 +150,6 @@ a{
     box-shadow: 0 0 5px;
     font-size: 1.5vw;
 }
-@media screen and (max-width: 800px){
-    .box-left, #box-right{
-        width: 90%;
-        height: auto;
-        font-size: 4vw;
-        margin-top: 2%;
-        margin-right: 0%;
-    }
-     
-    #container{
-        height: auto;
-        width: 100%;
-        margin-bottom: 2%;
-    }
-
-    #flex-container{
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    
-}
-
 
 #h3{
     text-align: center;
@@ -262,33 +220,6 @@ h2{
     width: 100%;
     text-align: center;
     padding-top: 30px;
-    
-
-}
-@media screen and (max-width: 800px){
-    .flex-box1{
-        flex-wrap: wrap;
-        width: 100%;
-        height: auto;
-        /*margin-right: 8%;
-        margin-left: 8%;*/
-        margin-top: 1em;
-        margin-right:0em;
-        /*padding-bottom: 10%;*/
-        
-    }
-
-    #box-container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        width: 100%;
-        
-    }
-
-
-
 }
 
 .box1{
@@ -302,16 +233,6 @@ h2{
     /*margin-right: 30px;*/
     /*border: none;
     box-shadow: 0 0 2px;*/
-}
-
-@media screen and (max-width: 800px){
-    #box1{
-        margin-bottom: 0em;
-        margin-top: 2em;
-    }
-    #box1-items{
-        margin-top: 0em;
-    }
 }
 
 h4{
@@ -362,25 +283,6 @@ h4{
     justify-content: center;
     margin-top: 20px;
    
-}
-@media screen and (max-width: 800px){
-    .flex-box2{
-        width: 100%;
-        flex-wrap: wrap;
-        
-    }
-
-    .container{
-        width: 100%;
-        height: auto;
-    }
-    #link1, #link2{
-        display: flex;
-        margin-bottom: 2em;
-        justify-content: center;
-        /*align-items: center;*/
-        
-    }
 }
 
 #find{
@@ -436,16 +338,18 @@ h4{
 
 
 #flex-box{
-    display: flex;
+    /*display: flex;*/
     width: 100%;
     height: auto;
-    justify-content: center;
+    /*justify-content: center;
+    justify-content: center;*/
     margin-bottom: 5em;
 }
 
 .flex-box2{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 40px;
     padding-right: 50px;
     justify-items: space-between;
@@ -477,5 +381,92 @@ h4{
     height: 15px;
     background-color: black;
 }
+
+
+
+@media (max-width: 768px){
+    .nav-bar{
+        width: 100%;
+    }
+
+    #span{
+        display: flex;
+        margin-right: -650px;
+    }
+
+    .photo-gallery-box{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .box-left, #box-right{
+        width: 90%;
+        height: auto;
+        font-size: 4vw;
+        margin-top: 2%;
+        margin-right: 0%;
+    }
+     
+    #container{
+        height: auto;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    #flex-container{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .flex-box1{
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        /*margin-right: 8%;
+        margin-left: 8%;*/
+        margin-top: 1em;
+        margin-right:0em;
+        /*padding-bottom: 10%;*/
+        
+    }
+
+    #box-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+        
+    }
+
+    #box1{
+        margin-bottom: 0em;
+        margin-top: 2em;
+    }
+    #box1-items{
+        margin-top: 0em;
+    }
+
+    .flex-box2{
+        width: 100%;
+        flex-wrap: wrap;
+        
+    }
+
+    .container{
+        width: 100%;
+        height: auto;
+    }
+    #link1, #link2{
+        display: flex;
+        margin-bottom: 2em;
+        justify-content: center;
+        /*align-items: center;*/
+        
+    }
+}
+
+
+
 
 

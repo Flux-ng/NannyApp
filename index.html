@@ -12,18 +12,22 @@
 </head>
 
 <body>
-  <section class="nav-bar">
-    <nav id= "nav-bar-items">
+  <section id ="nav-bar">
+    <nav class= "nav-bar-items">
         <div>
-            <a class="logo"href="#">ONYIC</a>
+            <a class="logo" href="#home" id="home">ONYIC</a>
         </div>
-        <div id="span">
-            <a href="# " id="a-nav">Documentary</a>
-            <a href="#" id="a-nav">Join as a nanny</a>
-            <a href="#" id="a-nav">FAQ</a>
-            <a href="#" id="a-nav">Log in</a>
+        <div class="nav_links">
+            <ul>
+                <li><a href="#doc" id="docs">Documentary</a></li>
+                <li><a href="#faq" id="faqs">FAQ</a></li>
+                <li><a href="#join" id="join">Join as a nanny</a></li>
+                <li><a href="#login" id="login">Log in</a></li> 
+            </ul>
         </div>
-        <a href="#" ><div id="reg">Register</div></a>
+        <div class="reg">
+            <a href="#reg" ><div id="reg">Register</div></a>
+        </div>
         
     </nav>
 </section>
@@ -32,16 +36,17 @@
 <section class="photo-gallery-box">
     <div id="box">
     <img src="https://res.cloudinary.com/daj93crqo/image/upload/v1587850467/Parent_v7a2jo.jpg" alt="Parent">
-     <a id= "link" href="#">I'M A PARENT</a><br/>
+     <a class= "link" href="#">I'M A PARENT</a><br/>
     <p>Looking for a child care?</p>
     </div>
     
 </div>
 <div id="box">
     <img src="https://res.cloudinary.com/daj93crqo/image/upload/v1587859999/Sitters_lofmes.png" alt="Sitter">
-    <a id= "link" href="#">I'M A SITTER</a><br/>
+    <a class= "link" href="#">I'M A SITTER</a><br/>
     <p>Looking for job oppotunity?</p>
-</div></section>
+</div>
+</section>
 
 <div id="message">
     <p>We want to connect millions
@@ -74,25 +79,26 @@
     </div>
     
 </section>
+    <div class="info">
+        To learn more, visit our <a href="#" class="learn-more">trust and safety center.</a>
+    </div>
 
-    <p>To learn more, visit our <a class="learn-more" href="#">trust and safety center.</a></p>
-
-    <div class="seach">
+    <div class="search">
         <p>Search for a Nanny best for your need made easy in just few steps</p>
     </div>
     
     <div class="tell-us">
-        <div id="few">
+        <div class="few">
             <h2>STEP 1</h2>
             <p class="steps">Tell us about your families' need</p>
         </div>
         <!--hr id="steps"-->
-        <div id="few">
+        <div class="few">
             <h2>STEP 2</h2>
             <p class="steps">Review responses and detailed profiles</p>
         </div>
         <!--hr id="steps"-->
-        <div id="few">
+        <div class="few">
             <h2> STEP 3</h2>
             <p class="steps">Screen, interview and make your choice</p>
         </div>
@@ -125,14 +131,12 @@
         </div>
     </div>
 </section>
-<div class="container">
+<div class="matches-cta">
     <h4>Find a perfect match for your need</h4>
     <div class="flex-box2">
-       <a href="#"> <div id= "link1">I'M A PARENT</div></a>
-        <a href="#"><div id= "link2">I'M A SITTER</div></a>
-    </div>
-    
-        
+        <div class="cta-link"><a href="#">I'M A PARENT</a></div>
+        <div class="cta-link"><a href="#">I'M A SITTER</a></div>
+    </div> 
 </div>
 
 

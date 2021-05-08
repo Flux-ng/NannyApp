@@ -14,8 +14,16 @@
 <body>
   <section id ="nav-bar">
     <nav class= "nav-bar-items">
-        <div>
-            <a class="logo" href="#home" id="home">ONYIC</a>
+        <div class="logo-ham">
+            <button class="ham">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            
+           <i>
+            <a class="logo" href="#home" id="home">Onyi</a>
+           </i> 
         </div>
         <div class="nav_links">
             <ul>
@@ -26,9 +34,24 @@
             </ul>
         </div>
         <div class="reg">
-            <a href="#reg" ><div id="reg">Register</div></a>
+            <a href="#reg" >Register</a>
         </div>
-        
+
+    </nav>
+
+
+    <div class="overlay"></div>
+    <nav class="sideNav">
+      <button class="menuX">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+        <ul class="mobile-nav-links">
+            <li><a href="#" class="nav-link" data-text="Login">Login</a></li>
+            <li><a href="#" class="nav-link" data-text="FAQ">FAQ</a></li>
+            <li><a href="#" class="nav-link" data-text="Join as a sitter">Join as a sitter</a></li>
+        </ul>
     </nav>
 </section>
 <main>
@@ -133,7 +156,7 @@
 </section>
 <div class="matches-cta">
     <h4>Find a perfect match for your need</h4>
-    <div class="flex-box2">
+    <div class="flex-cta">
         <div class="cta-link"><a href="#">I'M A PARENT</a></div>
         <div class="cta-link"><a href="#">I'M A SITTER</a></div>
     </div> 
@@ -142,12 +165,22 @@
 
 </main>
 <div class="info">
-<span>
-<a id="info-items" href="#">About us</a>
-<a id="info-items" href="#">careers</a>
-<a id="info-items" href="#">Blog</a>
-<a id="info-items" href="#">Press</a>
-</span>
+    <div>
+        <a class="info-items" href="#">About us</a>
+    </div>
+    <div>
+        <a class="info-items" href="#">careers</a>
+    </div>
+    <div>
+        <a class="info-items" href="#">Blog</a>
+    </div>
+    <div>
+        <a class="info-items" href="#">Press</a>
+    </div>
+
+
+
+
 </div>
 
 <div class="social-handles">
@@ -189,13 +222,15 @@
 
     </div>
 
-</section>
-<footer class="footer">
-<div id="copy">
-<i class="fa fa-copyright" style="padding-right: 5px;"></i>
-<p>2021</p> 
-<hr class="vert-line">ONYIC 
-</div> 
-</footer>
+    </section>
+        <footer class="footer">
+            <div id="copy">
+                <i class="fa fa-copyright" style="padding-right: 5px;"></i>
+                <p>2021</p> 
+                <hr class="vert-line">ONYIC 
+            </div> 
+        </footer>
+        <script src="script.js"></script>
 
+    </body>
 </html>

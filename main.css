@@ -146,16 +146,16 @@ li a {
     height: 100%;
     list-style: none;
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    padding-top: 5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 5rem;
+    
   }
   
   .sideNav ul li a {
     display: block;
     color: white;
-    padding-bottom: 10px;
-    margin-top: 1rem;
+    margin-top: 20px;
     border-bottom: 2px solid black;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
